@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿春短信轰炸平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            background-color: #468847;
+            width: 100%;
+            display: block;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">返回</a>
+    <iframe src="dxhz.html" frameborder="0"></iframe>
+    <script>
+        document.querySelector("iframe").style.width = window.innerWidth + "px";
+        document.querySelector("iframe").style.height = window.innerHeight + "px";
+        document.querySelector("a").onclick = function () {
+        window.open("index.html")
+        }
+    </script>
+</body>
+
+</html>
