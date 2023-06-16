@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+            /* 隐藏横向滚动条 */
+            overflow-y: hidden;
+            /* 隐藏纵向滚动条 */
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="https://indexceshi.neocities.org/" frameborder="0"></iframe>
+    <script>
+        function device() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // 手机
+                document.querySelector("body").style.display = "block";
+            } else {
+                // 电脑
+                document.querySelector("body").style.display = "none"
+                alert("本站点暂不支持电脑端访问")
+            }
+        }
+        setInterval(device, 1000)
+        let iii = document.querySelector("iframe")
+        iii.style.width = window.innerWidth + 10 + "px"
+        iii.style.height = window.innerHeight + 10 + "px"
+    </script>
+</body>
+
+</html>
